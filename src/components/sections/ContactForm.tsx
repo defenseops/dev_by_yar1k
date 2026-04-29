@@ -15,7 +15,17 @@ export default function ContactForm() {
   const submit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    await new Promise(r => setTimeout(r, 900))
+
+    const text = `📩 Новая заявка с сайта\n\n👤 Имя: ${form.name}\n📬 Контакт: ${form.contact}\n💰 Бюджет: ${form.budget || 'не указан'}\n📝 Сообщение:\n${form.message}`
+
+    try {
+      await fetch(`https://api.telegram.org/bot8401352791:AAGx_7ji609EGg0Tr4hm8KpXYC2uLm4xNnk/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chat_id: 854456461, text, parse_mode: 'HTML' }),
+      })
+    } catch {}
+
     setSent(true)
     setLoading(false)
   }
