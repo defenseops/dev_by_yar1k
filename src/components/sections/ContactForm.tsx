@@ -19,10 +19,10 @@ export default function ContactForm() {
     const text = `📩 Новая заявка с сайта\n\n👤 Имя: ${form.name}\n📬 Контакт: ${form.contact}\n💰 Бюджет: ${form.budget || 'не указан'}\n📝 Сообщение:\n${form.message}`
 
     try {
-      await fetch(`https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TG_TOKEN}/sendMessage`, {
+      await fetch(`https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TG_BOT}/sendMessage`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: process.env.NEXT_PUBLIC_TG_CHAT_ID, text, parse_mode: 'HTML' }),
+        body: JSON.stringify({ chat_id: process.env.NEXT_PUBLIC_TG_ID, text, parse_mode: 'HTML' }),
       })
     } catch {}
 
