@@ -97,8 +97,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ru" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/favicon.svg" sizes="any" />
         <meta name="geo.region" content="KZ-ALA" />
         <meta name="geo.placename" content="Алматы" />
         <meta name="geo.position" content="43.238949;76.889709" />
