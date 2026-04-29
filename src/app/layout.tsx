@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin', 'cyrillic'], display: 'swap', variable:
 const playfair = Playfair_Display({ subsets: ['latin', 'cyrillic'], display: 'swap', variable: '--font-playfair' })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://yaroslav.dev'),
+  metadataBase: new URL('https://dev-by-yar1k.vercel.app'),
   title: {
     default: 'Создание сайтов в Алматы — Ярослав Кулматов | Разработка под ключ',
     template: '%s | Ярослав Кулматов — Разработка сайтов Алматы',

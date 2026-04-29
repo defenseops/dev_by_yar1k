@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://yaroslav.dev/sitemap.xml',
-    host: 'https://yaroslav.dev',
+    sitemap: 'https://dev-by-yar1k.vercel.app/sitemap.xml',
+    host: 'https://dev-by-yar1k.vercel.app',
   }
 }
