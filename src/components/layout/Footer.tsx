@@ -34,8 +34,8 @@ export default function Footer() {
           </div>
           <div className="flex flex-col sm:flex-row gap-3 lg:justify-end">
             <a href="#contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-ink font-semibold rounded-full justify-center transition-colors hover:bg-canvas"
-              style={{ boxShadow:'0 4px 16px rgba(255,255,255,0.1)' }}>
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white font-semibold rounded-full justify-center transition-colors hover:bg-neutral-100"
+              style={{ color: '#0A0A0A', boxShadow:'0 4px 16px rgba(255,255,255,0.1)' }}>
               {f.cta1} <ArrowUpRight size={16} />
             </a>
           </div>

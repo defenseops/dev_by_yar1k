@@ -1,14 +1,11 @@
-import Header from '@/components/layout/Header'
+import { Header } from '@/components/ui/header-2'
 import Footer from '@/components/layout/Footer'
 import Hero from '@/components/sections/Hero'
-import Problems from '@/components/sections/Problems'
-import Solution from '@/components/sections/Solution'
 import Process from '@/components/sections/Process'
 import Portfolio from '@/components/sections/Portfolio'
 import Deliverables from '@/components/sections/Deliverables'
 import Pricing from '@/components/sections/Pricing'
 import About from '@/components/sections/About'
-import Testimonials from '@/components/sections/Testimonials'
 import FAQ from '@/components/sections/FAQ'
 import ContactForm from '@/components/sections/ContactForm'
 
@@ -138,14 +135,11 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Problems />
-        <Solution />
         <Process />
         <Portfolio />
         <Deliverables />
         <Pricing />
         <About />
-        <Testimonials />
         <FAQ />
         <ContactForm />
       </main>
